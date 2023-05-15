@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lionel Nishimwe</title>
+    <link rel="stylesheet" href="film3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <nav>
+      <h1 class="logo">LIONEL <span>NISHIMWE</span></h1>
+
+      <ul class="Menu" style="background-color: none">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html.#ABOUT">ABOUT</a></li>
+        <li><a href="index.html.#PRESS">PRESS</a></li>
+        <li><a href="index.html.#PROJECTS">PROJECTS</a></li>
+      </ul>
+
+      <div class="burger" style="background: white; height: 30px">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+    <section class="container">
+      <header class="hero">
+        <div>
+          <img src="image/t1.jpg" alt="" class="hero-image" />
+        </div>
+      </header>
+
+      <section class="main-section">
+        <div>
+          <div
+            class="the-recipe"
+            style="
+              color: white;
+              top: 50%;
+
+              position: absolute;
+              background: none;
+            "
+          >
+            <img src="image/t2.jpg" alt="" class="img-description" />
+            <div class="film-description">
+              <h1 style="background: none">Movie: Thema</h1>
+              <p style="background: none">2021 - original Language: French</p>
+
+              <div class="les-intervenants">
+                <div style="background: none; margin-right: 10px">
+                  <h5 style="background: none">country</h5>
+                  <p style="background: none">Burundi</p>
+                </div>
+
+                <div style="background: none; margin-right: 10px">
+                  <h5 style="background: none">Written and Directed by</h5>
+                  <p style="background: none">Lionel Nshimwe</p>
+                </div>
+
+                <div style="background: none">
+                  <h5 style="background: none">Actors</h5>
+                  <p style="background: none">Itangishaka Sella schilm</p>
+                </div>
+              </div>
+              <div class="synopsis" style="background: none">
+                <h3 style="background: none">Synopsis:</h3>
+                <p style="background: none">
+                  A young toddler named Thema raised by his mother in a poor
+                  village of Burundi spends his days helping his mother. the
+                  unexpected happens, his mother does. he will have to face the
+                  real world alone at a young age.
+                </p>
+              </div>
+
+              <br />
+              <h4 style="background: none">Awards and Nominations:</h4>
+              <br />
+
+              <section class="award-nomination" style="background: none">
+                <img
+                  src="laurels/thema/Best Short film  - FESTICAB  - 2021.png"
+                  alt=""
+                />
+                <img
+                  src="laurels/thema/Best picture  - FESTICAB  - 2021.png"
+                  alt=""
+                />
+              </section>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="lionel.js"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: 2500,
+        delay: 400,
+      });
+
+      ScrollReveal().reveal(".film-description", {
+        delay: 800,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".img-description", {
+        delay: 500,
+        origin: "top",
+      });
+    </script>
+  </body>
+</html>

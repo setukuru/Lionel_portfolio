@@ -1,0 +1,189 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+
+  background: linear-gradient(45deg, #251626, #1a0e1b);
+}
+
+nav {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 48px;
+  justify-content: space-around;
+  z-index: 100;
+}
+.Menu {
+  display: flex;
+  width: 30%;
+  list-style: none;
+  justify-content: space-around;
+}
+.burger {
+  display: none;
+  background: none;
+}
+.burger div {
+  background-color: rgb(255, 255, 255);
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  transition: all 0.3s ease;
+  /* background: none; */
+}
+.Menu :hover {
+  /* background-color: orangered; */
+  text-decoration: underline;
+  transform: scale(1.12);
+  transition-duration: 1s;
+}
+a {
+  text-decoration: none;
+  /* color: rgb(15, 15, 15); */
+  color: rgba(34, 33, 32, 0.89);
+}
+nav ul li {
+  position: relative;
+  top: 10px;
+  height: fit-content;
+  width: fit-content;
+}
+nav ul li a {
+  color: aliceblue;
+}
+.logo {
+  /* font-weight: bold; */
+  letter-spacing: 4px;
+  margin-top: 10px;
+  background-color: none;
+}
+span {
+  color: rgba(203, 26, 26, 0.781);
+  border-color: none;
+}
+.hero {
+  position: relative;
+}
+.container {
+  position: relative;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(#1a0e1b, transparent);
+  mask-image: linear-gradient(#1a0e1b, transparent);
+}
+
+.the-recipe {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  background: none;
+  /* padding: 40px; */
+  margin-left: 10%;
+  /* margin-right: 20%; */
+}
+.les-intervenants {
+  display: flex;
+  background: none;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.film-description {
+  background: none;
+  padding: 40px;
+  padding-top: 0px;
+}
+.img-description {
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+.les-intervenants h1 {
+  font-size: 35px;
+  font-weight: 6000;
+}
+p {
+  font-size: smaller;
+  color: rgb(179, 179, 179);
+}
+.synopsis p {
+  font-style: italic;
+  color: rgb(230, 228, 228);
+}
+
+.award-nomination img {
+  width: 17%;
+  object-fit: contain;
+  background: none;
+}
+@media screen and (max-width: 982px) {
+  .Menu {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    background: linear-gradient(rgba(33, 31, 31), rgb(38, 49, 53));
+    transform: translateX(100%);
+    transition: transform 0.4s ease-out;
+  }
+  .nav-active {
+    transform: translateX(0%);
+  }
+  .Menu li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+    margin-top: 0.7em;
+    cursor: pointer;
+  }
+  @keyframes navLinkFade {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2 {
+    opacity: 0;
+  }
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  .links_opacity li {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 752px) {
+  .logo {
+    font-size: 15px;
+    color: antiquewhite;
+  }
+  .the-recipe {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .img-description {
+    margin-left: 23%;
+  }
+}
+@media screen and (max-width: 415px) {
+  .award-nomination img {
+    width: 44%;
+  }
+}
